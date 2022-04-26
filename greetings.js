@@ -1,5 +1,5 @@
 function greet(name){
-    if (name === null){
+    if (name === undefined){
         console.log('Hello there!');
     }else if (name === name.toUpperCase()){
         console.log('HELLO '+ name);
