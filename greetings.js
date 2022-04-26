@@ -1,18 +1,15 @@
-function Greet(name){
-    if name === null{
+function greet(name){
+    if (name === null){
         console.log('Hello there!');
-    };
-    if name === name.upperCase{
+    }else if (name === name.toUpperCase()){
         console.log('HELLO '+ name);
-    };
-    if name === isArray{
+    }else if (name === name.isArray()){
         let nameList = ''
-        for i in name{
+        for (i in name){
             nameList=nameList + i.stringify+', '
         };
         console.log('Hello, '+ nameList);
-    };
-    else{
+    } else{
         console.log ('Hello, '+ name);
     };
     };
