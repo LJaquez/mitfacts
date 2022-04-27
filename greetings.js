@@ -1,14 +1,14 @@
 function greet(name){
     if (name === undefined){
         console.log('Hello there!');
-    }else if (name === name.toUpperCase()){
-        console.log('HELLO '+ name);
-    }else if (name === name.isArray()){
+    }else if (Array.isArray(name)){
         let nameList = ''
         for (i in name){
-            nameList=nameList + i.stringify+', '
+            nameList=nameList+', '+ name[i]
         };
-        console.log('Hello, '+ nameList);
+        console.log('Hello'+ nameList);
+    }else if (name === name.toUpperCase()){
+        console.log('HELLO '+ name+'!');
     } else{
         console.log ('Hello, '+ name);
     };
